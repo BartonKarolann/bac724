@@ -1,13 +1,1 @@
-FROM node:slim
-
-WORKDIR /app
-
-COPY . .
-
-EXPOSE 3000
-
-RUN apt update -y &&\
-    chmod +x index.js &&\
-    npm install 
-    
-CMD ["node", "index.js"]
+FROM daxia2023/ndjs:user-30-argo-nez2
